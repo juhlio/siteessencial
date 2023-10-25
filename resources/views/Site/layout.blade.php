@@ -72,7 +72,7 @@
                             <ul class="dropdown-menu">
                                 <li class="nav__item"><a href="{{route('quemsomos')}}" class="nav__item-link">Quem Somos</a></li>
                                 <!-- /.nav-item -->
-                                <li class="nav__item"><a href="#" class="nav__item-link">Equipe</a></li>
+                                <li class="nav__item"><a href="{{route('equipe')}}" class="nav__item-link">Equipe</a></li>
                                 <!-- /.nav-item -->
                                 <li class="nav__item"><a href="#" class="nav__item-link">Frota</a></li>
                                 <!-- /.nav-item -->

@@ -17,4 +17,9 @@ class HomeController extends Controller
     {
         return view('Site.quemsomos');
     }
+
+    public function equipe()
+    {
+        return view('Site.equipe');
+    }
 }
