@@ -77,7 +77,7 @@
                                 <li class="nav__item"><a href="{{route('frota')}}" class="nav__item-link">Frota</a></li>
                                 <!-- /.nav-item -->
                                 <!-- /.nav-item -->
-                                <li class="nav__item"><a href="#" class="nav__item-link">Linha do Tempo</a></li>
+                                <li class="nav__item"><a href="{{route('timeline')}}" class="nav__item-link">Linha do Tempo</a></li>
                                 <!-- /.nav-item -->
 
 

@@ -27,4 +27,9 @@ class HomeController extends Controller
     {
         return view('Site.frota');
     }
+
+    public function timeline()
+    {
+        return view('Site.timeline');
+    }
 }

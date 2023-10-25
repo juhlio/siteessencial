@@ -21,5 +21,6 @@ Route::get('/paginainicial', [HomeController::class, 'index']);
 Route::get('/quem-somos', [HomeController::class, 'quemsomos'])->name('quemsomos');
 Route::get('/equipe', [HomeController::class, 'equipe'])->name('equipe');
 Route::get('/frota', [HomeController::class, 'frota'])->name('frota');
+Route::get('/linha-do-tempo', [HomeController::class, 'timeline'])->name('timeline');
 
 
