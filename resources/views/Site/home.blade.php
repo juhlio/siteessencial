@@ -11,7 +11,7 @@
         data-autoplay="true" data-nav="true" data-dots="true" data-space="0" data-loop="true" data-speed="3000"
         data-transition="fade" data-animate-out="fadeOut" data-animate-in="fadeIn">
         <div class="slide-item align-v bg-overlay bg-overlay-2">
-          <div class="bg-img"><img src="https://apiessencial.com.br/vercel/assets/images/home/projeto-gerador-de-energia.jpg'" alt="Projetos de Geradores de Energia"></div>
+          <div class="bg-img"><img src="https://apiessencial.com.br/vercel/assets/images/home/projeto-gerador-de-energia.jpg" alt="Projetos de Geradores de Energia"></div>
           <div class="container">
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-10">
@@ -25,7 +25,7 @@
         </div><!-- /.slide-item -->
 
         <div class="slide-item align-v bg-overlay bg-overlay-2">
-          <div class="bg-img"><img src="https://apiessencial.com.br/vercel/assets/images/home/venda-geradores-energia.jpeg'" alt="Venda de Geradores de Energia"></div>
+          <div class="bg-img"><img src="https://apiessencial.com.br/vercel/assets/images/home/venda-geradores-energia.jpeg" alt="Venda de Geradores de Energia"></div>
           <div class="container">
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-10">
@@ -298,7 +298,7 @@
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="banner__img bg-overlay">
-          <div class="bg-img"><img src="https://apiessencial.com.br/vercel/assets/images/home/projetos-geradores-energia.jpg'" alt="Projetos de Geradores de Energia"></div>
+          <div class="bg-img"><img src="https://apiessencial.com.br/vercel/assets/images/home/projetos-geradores-energia.jpg" alt="Projetos de Geradores de Energia"></div>
         </div><!-- /.banner-img -->
       </div><!-- /.col-lg-6 -->
       <div class="col-sm-12 col-md-6 col-lg-6">
@@ -365,5 +365,193 @@
   </div><!-- /.container -->
 </section><!-- /.blog -->
 
+
+  <script type="text/javascript" src="{{asset('mapa2/js/loader.js')}}"></script>
+    <script type="text/javascript" src="{{asset('mapa2/js/jsapi.js')}}"></script>
+    <script type="text/javascript" src="{{asset('mapa2/js/jquery-3.3.1.min.js')}}"></script>
+
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['geochart']});
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      dicEstados = {
+          '1' : 'Acre',
+          '2' : 'Alagoas',
+          '3' : 'Amapa',
+          '4' : 'Amazonas',
+          '5' : 'Bahia',
+          '6' : 'Ceara',
+          '7' : 'Distrito Federal',
+          '8' : 'Espirito Santo',
+          '9' : 'Goias',
+          '10' : 'Maranhao',
+          '11' : 'Mato Grosso',
+          '12' : 'Mato Grosso do Sul',
+          '13' : 'Minas Gerais',
+          '14' : 'Para',
+          '15' : 'Paraiba',
+          '16' : 'Parana',
+          '17' : 'Pernambuco',
+          '18' : 'Piaui',
+          '19' : 'Rio de Janeiro',
+          '20' : 'Rio Grande do Norte',
+          '21' : 'Rio Grande do Sul',
+          '22' : 'Rondonia',
+          '23' : 'Roraima',
+          '24' : 'Santa Catarina',
+          '25' : 'Sao Paulo',
+          '26' : 'Sergipe',
+          '27' : 'Tocantins'
+        }
+        //o array abaixo pode ser alimentado por uma base de dados, ou api rest. no exemplo, deixei fixo.
+        unidades = {
+          'Acre':
+          {
+            '0' :
+            {
+              'Video' : '<iframe width="100%" height="315" src="https://www.youtube.com/embed/KlJd_bI7DVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            },
+          },
+          'Sao Paulo':
+          {
+            '0':
+              {
+              'Video' : '<iframe width="100%" height="315" src="https://www.youtube.com/embed/KlJd_bI7DVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            },
+          },
+          'Rio de Janeiro':
+          {
+            '0':
+              {
+              'Video' : '<iframe width="100%" height="315" src="https://www.youtube.com/embed/KlJd_bI7DVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            },
+          }
+        }
+
+      var ultimoEstadoSelecionado = '';
+
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Country'],
+          ['Brazil'],
+          ['Acre'],
+          ['Alagoas'],
+          ['Amapa'],
+          ['Amazonas'],
+          ['Bahia'],
+          ['Ceara'],
+          ['Distrito Federal'],
+          ['Espirito Santo'],
+          ['Goias'],
+          ['Maranhao'],
+          ['Mato Grosso'],
+          ['Mato Grosso do Sul'],
+          ['Minas Gerais'],
+          ['Para'],
+          ['Paraiba'],
+          ['Parana'],
+          ['Pernambuco'],
+          ['Piaui'],
+          ['Rio de Janeiro'],
+          ['Rio Grande do Norte'],
+          ['Rio Grande do Sul'],
+          ['Rondonia'],
+          ['Roraima'],
+          ['Santa Catarina'],
+          ['Sao Paulo'],
+          ['Sergipe'],
+          ['Tocantins']
+        ]);
+
+        var options = {
+           region: 'BR',
+           resolution: 'provinces',
+           datalessRegionColor: 'silver',
+           defaultColor: '#ff7518',
+           enableRegionInteractivity: true
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        function myClickHandler(){
+          var selection = chart.getSelection();
+          var message = '';
+          for (var i = 0; i < selection.length; i++) {
+              var item = selection[i];
+              if (item.row != null && item.column != null) {
+                  message += '{' + item.row + ',column:' + item.column + '}';
+              } else if (item.row != null) {
+                  message += '' + item.row + '';
+              } else if (item.column != null) {
+                  message += '{column:' + item.column + '}';
+              }
+          }
+          if (message == '') {
+              message = ultimoEstadoSelecionado;
+          }else{
+              ultimoEstadoSelecionado = message;
+          }
+            document.getElementById("dadosLojas").innerHTML = '';
+            for(var i = 0; i < Object.keys(unidades).length; i ++){
+              document.getElementById("estado").innerHTML = dicEstados[message];
+              //Ponto de melhoria, percorrer o array apenas nos itens relacionados ao estado clicado/marcado. (lazy)
+              if(unidades[dicEstados[message]][i] != undefined){
+                document.getElementById("dadosLojas").innerHTML +=
+                unidades[dicEstados[message]][i]['Video']
+
+              }
+            }
+          }
+
+          google.visualization.events.addListener(chart, 'select', myClickHandler);
+
+          chart.draw(data, options);
+
+          $('#seletorCombo').change(function(){
+            valEstado = $(this).val();
+            arraySelection = [];
+            arraySelection.push({column:null,row:Number(valEstado)});
+
+
+            function myComboHandler(option){
+              var selection = option;
+              console.log(selection);
+              var message = '';
+              for (var i = 0; i < selection.length; i++) {
+                  var item = selection[i];
+                  if (item.row != null && item.column != null) {
+                      message += '{' + item.row + ',column:' + item.column + '}';
+                  } else if (item.row != null) {
+                      message += '' + item.row + '';
+                  } else if (item.column != null) {
+                      message += '{column:' + item.column + '}';
+                  }
+              }
+              if (message == '') {
+                  message = 'nothing';
+                  return false;
+              }
+                document.getElementById("dadosLojas").innerHTML = '';
+                for(var i = 0; i < Object.keys(unidades).length;  i ++){
+                  document.getElementById("estado").innerHTML = dicEstados[message];
+                  document.getElementById("dadosLojas").innerHTML +=
+                  unidades[dicEstados[message]][i]['Video']
+                }
+              }
+
+
+            google.visualization.events.addListener(chart, 'select', myComboHandler);
+
+              chart.draw(data, options);
+
+              myComboHandler(arraySelection);
+        });
+      }
+
+
+
+    </script>
 
 @endsection

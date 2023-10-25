@@ -15,7 +15,7 @@
         <script src="https://kit.fontawesome.com/47b650be03.js" crossorigin="anonymous"></script>
 
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    
+
 
 
 
@@ -130,7 +130,7 @@
     @yield('content')
 
 <!--
-  <!-- ========================
+   ========================
       Footer
     ========================== -->
     <footer id="footer1" class="footer footer-1 bg-heading">
@@ -202,9 +202,10 @@
 
   </div><!-- /.wrapper -->
 
-  <script src="{{asset('assets/js/jquery-3.3.1.min.js')}}"></script>
-  <script src="{{asset('assets/js/plugins.js')}}"></script>
-  <script src="{{asset('assets/js/main.js')}}"></script>
+  <script src="https://apiessencial.com.br/vercel/assets/js/jquery-3.3.1.min.js"></script>
+  <script src="https://apiessencial.com.br/vercel/assets/js/plugins.js"></script>
+  <script src="https://apiessencial.com.br/vercel/assets/js/main.js"></script>
+
 
 
 
