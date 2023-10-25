@@ -56,8 +56,8 @@
             <div class="container">
 
                 <a class="navbar-brand" href="#">
-                    <img src="{{asset('assets/images/logo/logo-light.png')}}" class="logo-light" alt="logo">
-                    <img src="{{asset('assets/images/logo/logo-dark.png')}}" class="logo-dark" alt="logo">
+                    <img src="https://apiessencial.com.br/vercel/assets/images/logo/logo-light.png" class="logo-light" alt="logo">
+                    <img src="https://apiessencial.com.br/vercel/assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button">
                     <span class="menu-lines"><span></span></span>
@@ -139,7 +139,7 @@
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-3 footer__widget footer__widget-about">
               <div class="footer__widget-content">
-                <img src="{{asset('assets/images/logo/logo-dark.png')}}" alt="Essencial Energia Grupos Geradores" class="footer__logo">
+                <img src="https://apiessencial.com.br/vercel/assets/images/logo/logo-dark.png" alt="Essencial Energia Grupos Geradores" class="footer__logo">
                 <p>Soluções Completas para Grupos Geradores de Energia. Desde o dimensionamento até o Start Up.</p>
                 <ul class="contact__list2 list-unstyled">
                   <li><i class="icon-phone"></i>  0800 779 9009</li>
