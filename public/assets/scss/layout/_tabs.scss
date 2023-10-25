@@ -1,0 +1,92 @@
+/*--------------------
+    Tabs
+--------------------*/
+.nav-tabs {
+    border-bottom: 2px solid #e6e6e6;
+
+    .nav__link {
+        display: block;
+        padding: 10px;
+        margin-right: 20px;
+        font-family: $font-heading;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1;
+        color: $color-dark;
+        margin-bottom: -2px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    .nav__link.active {
+        border-bottom: 2px solid $color-theme;
+        color: $color-theme;
+    }
+}
+
+.tab-content {
+    padding-top: 36px;
+}
+
+.tabs-2 .nav-tabs .nav__link {
+    margin-bottom: 0;
+}
+
+.tabs-2 .nav-tabs .nav__link.active {
+    border: none;
+    background-color: $color-theme;
+    color: $color-white;
+}
+
+
+.nav-split {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    z-index: 120;
+
+    li a {
+        width: 9px;
+        height: 9px;
+        background-color: #222222;
+        border-radius: 50%;
+        display: block;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    li:last-child a {
+        margin-bottom: 0;
+    }
+
+    li.active a {
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        border: 2px solid $color-heading;
+        margin-left: -1px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: $color-heading;
+            transform: translate(-50%, -50%)
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .nav-split {
+        right: 10px;
+    }
+}

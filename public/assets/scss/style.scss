@@ -1,0 +1,54 @@
+// Global 
+@import 'global/vars';
+@import 'global/mixins';
+@import 'global/global';
+
+// Layout 
+@import 'layout/helpers';
+@import 'layout/bg-colors';
+@import 'layout/typography';
+@import 'layout/pagetitle';
+@import 'layout/buttons';
+@import 'layout/forms';
+@import 'layout/tabs';
+@import 'layout/icons';
+@import 'layout/breadcrumb';
+@import 'layout/pagination';
+@import 'layout/lists';
+@import 'layout/alert';
+
+// Modules
+@import 'module/header';
+@import 'module/accordion';
+@import 'module/banners';
+@import 'module/dividers';
+@import 'module/footer';
+@import 'module/blockquote';
+@import 'module/carousel';
+@import 'module/slider';
+@import 'module/skills';
+@import 'module/video';
+@import 'module/features';
+@import 'module/fancybox';
+@import 'module/projects';
+@import 'module/team';
+@import 'module/testimonial';
+@import 'module/cta';
+@import 'module/clients';
+@import 'module/blog';
+@import 'module/contact';
+@import 'module/pricing';
+@import 'module/counters';
+@import 'module/process';
+@import 'module/pie-charts';
+@import 'module/timeline';
+@import 'module/newsletter';
+@import 'module/shop';
+@import 'module/sidebar';
+@import 'module/countdown';
+@import 'module/utilities-pages';
+@import 'module/landing';
+
+/*
+sass --watch C:\Users\eng_a\Dropbox\yorks-dev\assets\scss\style.scss:C:\Users\eng_a\Dropbox\yorks-dev\assets\css\style.css
+*/

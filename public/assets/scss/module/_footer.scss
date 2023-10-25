@@ -1,0 +1,205 @@
+/*-------------------------
+    Footer
+--------------------------*/
+.footer-widget {
+    padding-top: 90px;
+    padding-bottom: 60px;
+
+    .footer__widget-title {
+        font-size: 13px;
+        text-transform: uppercase;
+        color: $color-white;
+        line-height: 1;
+        margin-bottom: 40px;
+    }
+
+    .footer__logo {
+        margin-bottom: 27px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .post-item {
+        margin-bottom: 20px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .post__title {
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 0;
+
+            a {
+                color: #cecece;
+
+                &:hover {
+                    color: $color-theme;
+                }
+            }
+        }
+
+        .post__date {
+            display: inline-block;
+            color: #616161;
+            line-height: 1;
+            margin-bottom: 11px;
+        }
+    }
+
+    .footer__widget-newsletter {
+        .widget__newsletter-form {
+            margin-bottom: 23px;
+
+            .form-control {
+                border: 1px solid #1d1d1d;
+                background-color: #1d1d1d;
+                font-size: 14px;
+                color: $color-white;
+                height: 42px;
+                padding-left: 17px;
+            }
+
+            .form-control::-webkit-input-placeholder {
+                color: #474747;
+                font-style: italic;
+            }
+
+            .form-control:-moz-placeholder {
+                color: #474747;
+                font-style: italic;
+            }
+
+            .form-control::-moz-placeholder {
+                color: #474747;
+                font-style: italic;
+            }
+
+            .form-control:-ms-input-placeholder {
+                color: #474747;
+                font-style: italic;
+            }
+
+            .form__submit {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: $color-theme;
+                color: $color-white;
+                width: 42px;
+                height: 42px;
+                transition: .3s ease;
+
+                &:hover {
+                    background-color: $color-white;
+                    color: $color-theme;
+                }
+            }
+
+        }
+
+        p {
+            margin-bottom: 21px;
+        }
+    }
+
+    .social__icons a {
+        color: #646464;
+        margin-right: 24px;
+
+        &:hover {
+            color: $color-white;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+}
+
+.instagram__images {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        position: relative;
+        padding: 1px;
+        width: 80px;
+        height: 80px;
+
+        .img__overlay {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            background-color: $color-theme;
+            text-align: center;
+            opacity: 0;
+            transition: all 0.4s ease;
+            transform: scale(0);
+
+            a {
+                display: block;
+                top: 50%;
+                position: relative;
+                transform: translateY(-50%);
+
+                .dotted__line {
+                    margin: auto;
+                }
+            }
+        }
+
+        &:hover .img__overlay {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+
+.footer-bar {
+    padding: 25px 0;
+    border-top: 1px solid #474747;
+}
+
+@include xs-sm-screens {
+    .footer__widget {
+        margin-bottom: 30px;
+    }
+
+    .footer-widget .footer__widget-title {
+        margin-bottom: 20px;
+    }
+}
+
+/* Scroll Top Button */
+#scrollTopBtn {
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    width: 45px;
+    height: 45px;
+    opacity: 0;
+    z-index: 1000;
+    font-size: 20px;
+    border-radius: 50%;
+    color: $color-white;
+    background-color: $color-dark;
+    overflow: hidden;
+    @include prefix(transition, all .3s ease-in-out, webkit moz ms o);
+
+    &:hover {
+        background-color: $color-theme;
+    }
+}
+
+#scrollTopBtn.actived {
+    right: 30px;
+    opacity: 1;
+}

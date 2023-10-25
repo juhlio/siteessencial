@@ -1,0 +1,97 @@
+/*-------------------------
+    Timeline
+-------------------------*/
+
+.timeline-wrap {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 85px;
+        width: 2px;
+        height: 100%;
+        background-color: #cecece;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 85px;
+        width: 2px;
+        height: 20px;
+        background-color: #cecece;
+    }
+
+}
+
+.timeline__item {
+    position: relative;
+    margin-bottom: 61px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .timeline__item-date {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: $font-heading;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        color: $color-theme;
+    }
+
+    .timeline__item-content {
+        padding-left: 121px;
+    }
+
+    .timeline__item-title {
+        position: relative;
+        color: $color-dark;
+        font-size: 20px;
+        line-height: 1;
+        margin-bottom: 10px;
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: -42px;
+            font-family: fontawesome;
+            content: "\f017";
+            font-size: 16px;
+            font-weight: 400;
+            width: 30px;
+            height: 25px;
+            line-height: 25px;
+            color: $color-dark;
+            background: #ffffff;
+        }
+    }
+
+    .timeline__item-desc {
+        line-height: 23px;
+        margin-bottom: 0;
+    }
+
+}
+
+/* Mobile Phones and tablets */
+@include xs-screens {
+    .timeline__item {
+        margin-bottom: 40px;
+
+        .timeline__item-title {
+            font-size: 16px;
+        }
+
+        .timeline__item-desc {
+            font-size: 14px;
+        }
+    }
+}

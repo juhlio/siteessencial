@@ -1,0 +1,57 @@
+/*-------------------------
+    process 
+--------------------------*/
+.process-item {
+    padding: 100px 55px;
+    @include prefix(transition, all .5s linear, webkit moz ms o);
+
+    &:hover {
+        background-color: $color-theme !important;
+
+        .process__number,
+        .process__title,
+        .process__desc {
+            color: $color-white;
+        }
+
+        .dotted__line span {
+            background-color: $color-white;
+
+            &:before,
+            &:after {
+                background-color: $color-white;
+            }
+        }
+    }
+
+    .process__number {
+        display: block;
+        font-family: $font-heading;
+        font-size: 40px;
+        line-height: 1;
+        color: $color-heading;
+        margin-bottom: 27px;
+        transition: .3s ease;
+    }
+
+    .process__title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .process__desc {
+        margin-bottom: 27px;
+    }
+
+}
+
+.process-item:hover .process__number {
+    transform: translateY(-4px);
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .process-item {
+        padding: 50px 30px;
+    }
+}

@@ -1,0 +1,123 @@
+/*-------------------------
+   Typography
+--------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-heading;
+    font-family: $font-heading;
+    font-weight: 700;
+    margin-bottom: 23px;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 38px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+.heading__subtitle {
+    font-family: $font-heading;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    color: $color-theme;
+    display: inline-block;
+    margin-bottom: 31px;
+}
+
+.heading__title {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 30px;
+}
+
+.heading__desc {
+    font-size: 17px;
+    line-height: 27px;
+    color: #a5a5a5;
+    margin-bottom: 0;
+}
+
+.divider__line+.heading__desc {
+    margin-top: 32px;
+}
+
+.heading-2 .heading__desc {
+    margin-bottom: 44px;
+}
+
+.heading-3 .heading__title {
+    margin-bottom: 13px;
+}
+
+.heading-3 .heading__desc {
+    margin-bottom: 24px;
+}
+
+.heading-4 .heading__title {
+    margin-bottom: 21px;
+}
+
+.heading-4 .divider__line+.heading__desc {
+    margin-top: 23px;
+}
+
+.heading-8 .heading__desc {
+    padding-top: 35px;
+}
+
+.heading-9 .heading__title {
+    margin-bottom: 22px;
+}
+
+.heading-9 .heading__desc {
+    margin-bottom: 43px;
+}
+
+.heading-10 .heading__title {
+    font-size: 48px;
+    line-height: 52px;
+}
+
+.heading__shape {
+    display: inline-block;
+    width: 70px;
+    height: 48px;
+    background-image: url(../images/shapes/plantshape.png);
+    margin-bottom: 27px;
+}
+
+.heading__shape-white {
+    background-image: url(../images/shapes/plantshape-white.png);
+}

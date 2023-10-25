@@ -1,0 +1,23 @@
+/*------------------- 
+    Icons
+------------------*/
+
+.social__icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    a {
+        font-size: 14px;
+        margin-right: 10px;
+        color: $color-heading;
+
+        &:hover {
+            color: $color-theme;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}

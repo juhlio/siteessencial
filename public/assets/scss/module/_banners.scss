@@ -1,0 +1,58 @@
+/*-----------------------
+    Banners
+------------------------*/
+.banner__img {
+    height: 720px;
+}
+
+.banner-3 .inner-padding {
+    padding-bottom: 20px;
+}
+
+.banner-3 .fancybox-item {
+    padding-top: 10px;
+}
+
+.banner-3 .owl-dots {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.banner-4 .piechart-item-data .percentage {
+    background-color: $color-white;
+    box-shadow: 0 0 0 7px $color-white;
+}
+
+.banner-4 .inner-padding {
+    padding-bottom: 100px;
+}
+
+.banner-5 .inner-padding {
+    padding-bottom: 0;
+}
+
+.banner-5 .fancybox-item {
+    margin-bottom: 46px;
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .banner__img {
+        height: 400px;
+    }
+
+    .banner-3 .inner-padding {
+        padding-bottom: 30px;
+    }
+
+    .banner-5 .fancybox-item {
+        margin-bottom: 30px;
+    }
+}
+
+/* Medium Size Devices */
+@include md-screens {
+    .banner-3 .inner-padding {
+        padding-bottom: 50px;
+    }
+}

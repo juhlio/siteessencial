@@ -1,0 +1,42 @@
+/*----------------------
+        Forms
+----------------------*/
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    border-bottom: 2px solid #e6e6e6;
+    border-radius: 0;
+    padding: 0;
+    font-size: 14px;
+
+    &:focus {
+        border-color: $color-theme;
+    }
+}
+
+textarea.form-control {
+    height: 122px;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #9b9b9b;
+}
+
+.form-control:-moz-placeholder {
+    color: #9b9b9b;
+}
+
+.form-control::-moz-placeholder {
+    color: #9b9b9b;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #9b9b9b;
+}

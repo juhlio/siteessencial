@@ -1,0 +1,40 @@
+/*-----------------------
+    Pie Charts
+------------------------*/
+.piechart-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.piechart-item-data .percentage {
+    display: inline-block;
+    position: absolute;
+    width: 144px;
+    height: 144px;
+    line-height: 144px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid #ebebeb;
+    margin: 11px;
+}
+
+.piechart-item-data .percentage i {
+    font-size: 64px;
+    color: $color-theme;
+    line-height: 144px;
+}
+
+.piechart-item-data span {
+    font-family: $font-heading;
+    font-size: 30px;
+    color: $color-theme;
+    font-weight: 600;
+}
+
+.piechart__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 22px;
+    margin-bottom: 0;
+}

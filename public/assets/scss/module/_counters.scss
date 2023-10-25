@@ -1,0 +1,53 @@
+/*---------------------------
+    Counters
+--------------------------*/
+
+.counters {
+    padding: 60px 0;
+}
+
+.counter-item {
+    text-align: center;
+
+    .counter {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+    .counter__divider {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 2px;
+        background-color: #4e4e4e;
+        margin-bottom: 10px;
+    }
+
+    .counter__desc {
+        font-size: 13px;
+        line-height: 1;
+        letter-spacing: .5px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+}
+
+.counters-2 .counter,
+.counters-2 .counter__desc {
+    color: $color-white;
+}
+
+.counters-2 .counter-item .counter__divider {
+    background-color: $color-white;
+}
+
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .counter-item {
+        margin-bottom: 30px;
+    }
+}

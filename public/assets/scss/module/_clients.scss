@@ -1,0 +1,64 @@
+/*----------------------- 
+    Clients
+-----------------------*/
+
+.clients {
+    .client {
+        position: relative;
+        text-align: center;
+        @include prefix(transition, .3s ease, webkit moz ms o);
+
+        img {
+            display: inline-block;
+            width: auto !important;
+            max-width: 100%;
+        }
+    }
+}
+
+.clients-3 .clients-row .client {
+    padding: 25px 0;
+
+    &:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: calc(100% - 30px);
+        background-color: rgb(206, 206, 206, .3);
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 30px);
+        height: 1px;
+        background-color: rgb(206, 206, 206, .3);
+    }
+}
+
+.clients-3 .clients-row .client:last-child:before {
+    display: none;
+}
+
+.clients-3 .clients-row:last-child .client {
+    margin-bottom: 0;
+}
+
+.clients-3 .clients-row:last-child .client:after {
+    display: none;
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+
+    .clients-3 .clients-row .client:before,
+    .clients-3 .clients-row .client:after {
+        display: none;
+    }
+}

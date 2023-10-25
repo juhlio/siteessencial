@@ -1,0 +1,161 @@
+/*-----------------------
+     Fancybox 
+------------------------*/
+
+.fancybox-item {
+    position: relative;
+
+    .fancybox__icon {
+        font-size: 64px;
+        line-height: 1;
+        color: $color-theme;
+        @include prefix(transition, transform .3s ease, webkit moz ms o);
+        margin-bottom: 20px;
+    }
+
+    &:hover .fancybox__icon {
+        @include prefix(transform, translateY(-4px), webkit moz ms o);
+    }
+
+    &:hover .fancybox__title {
+        color: $color-theme;
+    }
+
+    .fancybox__title {
+        font-size: 20px;
+        line-height: 1;
+        margin-bottom: 14px;
+        @include prefix(transition, all .3s ease, webkit moz ms o);
+    }
+
+    .fancybox__desc {
+        margin-bottom: 0;
+    }
+
+    .fancybox__desc+.dotted__line {
+        margin-top: 21px;
+    }
+
+}
+
+.fancybox-layout1 .fancybox-item {
+    padding: 0 20px;
+}
+
+.fancybox-layout3 .fancybox__icon {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    margin-bottom: 0;
+}
+
+.fancybox-layout3 .fancybox__content {
+    padding-left: 100px;
+}
+
+.fancybox-layout3 .fancybox-item:hover .fancybox__icon {
+    @include prefix(transform, translateY(0), webkit moz ms o);
+}
+
+.fancybox-layout4 .fancybox-item {
+    padding: 64px 25px 52px;
+
+    .fancybox__icon {
+        margin-bottom: 25px;
+    }
+
+    .fancybox__title {
+        margin-bottom: 20px;
+    }
+
+    .fancybox__icon,
+    .fancybox__title,
+    .fancybox__desc {
+        color: $color-white;
+    }
+}
+
+.fancybox-bordered .fancybox-item {
+    padding: 8px 30px 35px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        background-color: #ededed;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #ededed;
+    }
+
+    &:last-child:before {
+        display: none;
+    }
+}
+
+.fancybox-bordered .fancybox-row:last-of-type .fancybox-item {
+    padding-top: 42px;
+    padding-bottom: 0;
+
+    &:after {
+        display: none;
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .fancybox-item {
+        margin-bottom: 30px;
+    }
+
+    .fancybox-item .fancybox__icon {
+        font-size: 40px;
+    }
+
+    .fancybox-layout4 .fancybox-item {
+        padding: 30px 15px;
+    }
+
+    .fancybox-bordered .fancybox-item:before,
+    .fancybox-bordered .fancybox-item:after {
+        display: none;
+    }
+
+    .fancybox-bordered .fancybox-row:last-of-type .fancybox-item {
+        padding: 20px;
+    }
+}
+
+/* Medium Size Devices */
+@include md-screens {
+    .fancybox-item {
+        margin-bottom: 30px;
+    }
+
+    .fancybox-bordered .fancybox-item,
+    .fancybox-bordered .fancybox-row:last-of-type .fancybox-item {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .fancybox-layout1 .fancybox-item {
+        padding: 0;
+    }
+}
+
+/* Large Size Devices */
+@include lg-screens {
+    .fancybox-layout4 .fancybox-item {
+        padding: 63px 15px 52px;
+    }
+}

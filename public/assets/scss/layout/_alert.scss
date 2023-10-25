@@ -1,0 +1,34 @@
+/*-----------------------
+    Alerts
+-----------------------*/
+.alert-panel {
+    position: relative;
+    background-color: $color-gray;
+    padding: 20px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.alert__icon {
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    background-color: $color-theme;
+    color: $color-white;
+    font-size: 15px;
+    margin-right: 22px;
+    min-width: 46px;
+}
+
+.alert__title {
+    font-size: 15px;
+    color: $color-theme;
+    margin-bottom: 6px;
+}
+
+.alert__desc {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+}

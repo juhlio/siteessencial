@@ -1,0 +1,56 @@
+/*----------------------
+    Accordions
+------------------------*/
+.accordion-item {
+    border: 1px solid #ededed;
+    background-color: $color-white;
+    margin-bottom: 15px;
+    padding: 30px 30px 24px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .accordion__item-title {
+        font-family: $font-heading;
+        color: $color-dark;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        display: block;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            right: 0;
+            top: 0;
+            content: "\f068";
+            font-family: fontawesome;
+            background-color: $color-heading;
+            color: $color-white;
+            font-size: 10px;
+            font-weight: 400;
+            text-align: center;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+        }
+    }
+
+    .accordion__item-header.opened .accordion__item-title {
+        color: $color-theme;
+
+        &:after {
+            background-color: $color-theme;
+            content: "\f067";
+        }
+    }
+
+    .accordion__item-body {
+        padding-top: 25px;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

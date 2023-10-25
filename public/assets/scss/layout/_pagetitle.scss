@@ -1,0 +1,161 @@
+/*-------------------------
+    page title 
+-------------------------*/
+
+.header-transparent+.page-title {
+    margin-top: -100px;
+}
+
+.pagetitle__subheading {
+    font-family: $font-secondary;
+    font-size: 17px;
+    line-height: 1;
+    color: $color-gray;
+    display: block;
+    margin-bottom: 24px;
+}
+
+.pagetitle__heading {
+    font-size: 70px;
+    color: $color-white;
+    margin-bottom: 0;
+}
+
+.pagetitle__desc {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: $color-white;
+    margin-bottom: 0;
+}
+
+.page-title {
+    padding: 424px 0 97px;
+
+    .breadcrumb {
+        margin-top: 27px;
+        margin-bottom: 0;
+    }
+
+    .breadcrumb-item a,
+    .breadcrumb-item+.breadcrumb-item::before {
+        color: $color-white;
+    }
+
+    .breadcrumb-item a:hover {
+        color: $color-theme;
+    }
+
+    .breadcrumb-item.active {
+        color: #f4f4f4;
+    }
+}
+
+.page-title-layout2 {
+    padding: 271px 0 168px;
+
+    .breadcrumb {
+        margin-top: 26px;
+    }
+}
+
+.page-title-layout4 {
+    padding: 276px 0 29px;
+
+    .pagetitle__heading {
+        margin-bottom: 7px;
+    }
+
+    .breadcrumb {
+        margin-top: 140px;
+    }
+}
+
+.page-title-layout5 {
+    padding: 249px 0 156px;
+
+    .breadcrumb {
+        margin-top: 24px;
+    }
+}
+
+.page-title-layout6 {
+    padding: 246px 0 29px;
+
+    .pagetitle__heading {
+        margin-bottom: 20px;
+    }
+
+    .breadcrumb {
+        margin-top: 107px;
+    }
+}
+
+.page-title-layout7 {
+    padding: 276px 0 184px;
+
+    .pagetitle__heading {
+        margin-bottom: 7px;
+    }
+}
+
+.page-title-8 {
+    padding: 275px 0 169px;
+}
+
+.page-title-layout9 {
+    padding: 312px 0 29px;
+
+    .breadcrumb {
+        margin-top: 165px;
+    }
+}
+
+.page-title-layout10 {
+    padding: 312px 0 209px;
+}
+
+.page-title-layout12 {
+    padding: 220px 0 127px;
+}
+
+.page-title-layout13 {
+    padding: 425px 0 96px;
+}
+
+.page-title-layout14 {
+    padding: 230px 0 137px;
+}
+
+.page-title-layout15 {
+    padding: 259px 0 29px;
+
+    .breadcrumb {
+        margin-top: 116px;
+    }
+}
+
+.page-title-layout16 {
+    padding: 234px 0 126px;
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .page-title {
+        padding: 100px 0 50px;
+    }
+
+    .pagetitle__desc {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .pagetitle__heading {
+        font-size: 32px;
+    }
+
+    .page-title .breadcrumb {
+        margin-top: 20px;
+    }
+}

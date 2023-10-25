@@ -1,0 +1,89 @@
+/*-------------------------
+   Background & Colors
+--------------------------*/
+
+/* Colors */
+
+.color-white {
+    color: $color-white !important;
+}
+
+.color-gray {
+    color: $color-gray !important;
+}
+
+.color-dark {
+    color: $color-dark !important;
+}
+
+.color-theme {
+    color: $color-theme !important;
+}
+
+.color-heading {
+    color: $color-heading !important;
+}
+
+.color-body {
+    color: $color-body !important;
+}
+
+/* backgrounds */
+
+.bg-white {
+    background-color: $color-white !important;
+}
+
+.bg-gray {
+    background-color: $color-gray !important;
+}
+
+.bg-dark {
+    background-color: $color-dark !important;
+}
+
+.bg-heading {
+    background-color: $color-heading !important;
+}
+
+.bg-theme {
+    background-color: $color-theme !important;
+}
+
+.bg-img {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-overlay:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(#1b1a1a, 5%);
+}
+
+.bg-overlay-2:before {
+    background-color: rgba(#1b1a1a, 25%);
+}
+
+.bg-overlay-3:before {
+    background-color: rgba(#1b1a1a, 75%);
+}
+
+.bg-overlay-4:before {
+    background-color: rgba(#1b1a1a, 55%);
+}
+
+.bg-overlay-5:before {
+    background-color: rgba(#1b1a1a, 15%);
+}
+
+.bg-parallax {
+    background-attachment: fixed;
+}

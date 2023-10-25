@@ -1,0 +1,84 @@
+/*----------------------------
+    Contact
+----------------------------*/
+.contact {
+    .inner-padding {
+        padding: 100px 110px 110px;
+    }
+
+    .contact__banner {
+        height: 638px;
+
+        .heading__shape {
+            margin-bottom: 37px;
+        }
+    }
+}
+
+.contact-panel {
+    margin-bottom: 30px;
+
+    .contact__panel-title {
+        font-size: 22px;
+        line-height: 1;
+    }
+
+    .contact__panel-desc {
+        line-height: 22px;
+        margin-bottom: 21px;
+    }
+
+    .btn__link {
+        width: auto;
+        height: auto;
+        line-height: 1;
+        color: $color-theme;
+        margin-top: 18px;
+
+        &:hover {
+            color: $color-heading;
+        }
+    }
+}
+
+/* Mobile Phones*/
+@include xs-screens {
+    .contact .inner-padding {
+        padding: 50px 30px;
+    }
+
+    .contact .contact__banner .heading .heading__title {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .contact .contact__banner .heading .heading__shape {
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .contact .inner-padding {
+        padding: 50px 30px;
+    }
+
+    .contact .contact__banner {
+        height: 400px;
+    }
+
+}
+
+/* Medium Size Devices */
+@include md-screens {
+    .contact .inner-padding {
+        padding: 100px 30px 110px;
+    }
+}
+
+/* Large Size Devices */
+@include lg-screens {
+    .contact .inner-padding {
+        padding: 100px 40px 110px;
+    }
+}

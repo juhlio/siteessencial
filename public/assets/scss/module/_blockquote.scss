@@ -1,0 +1,65 @@
+/*-----------------------
+    Blockquote
+ ------------------------*/
+
+.blockquote {
+    position: relative;
+    font-family: $font-secondary;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 26px 37px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+
+    .quote__author {
+        font-family: $font-heading;
+        color: $color-heading;
+        font-size: 13px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 1;
+        margin-top: 16px;
+        display: block;
+    }
+}
+
+.blockquote-1 {
+    border-left: 6px solid $color-heading;
+    border-radius: 0;
+}
+
+.blockquote-2 {
+    background-color: #f4f4f4;
+    color: $color-theme;
+}
+
+.blockquote-3:before,
+.blockquote-3:after {
+    position: absolute;
+    font-family: fontawesome;
+    font-size: 16px;
+    color: $color-heading;
+    font-style: normal;
+    line-height: 1;
+}
+
+.blockquote-3:before {
+    content: "\f10d";
+    top: 0;
+    left: 0;
+}
+
+.blockquote-3:after {
+    content: "\f10e";
+    bottom: 0;
+    right: 0;
+}
+
+.blockquote-4 {
+    background-color: $color-heading;
+    color: $color-white;
+
+    .quote__author {
+        color: $color-white;
+    }
+}
