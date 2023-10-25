@@ -55,7 +55,7 @@
 
             <div class="container">
 
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="{{route('home')}}">
                     <img src="https://apiessencial.com.br/vercel/assets/images/logo/logo-light.png" class="logo-light" alt="logo">
                     <img src="https://apiessencial.com.br/vercel/assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
                 </a>
@@ -65,12 +65,12 @@
                 <div class="collapse navbar-collapse" id="mainNavigation">
                     <ul class="navbar-nav mr-30 ml-auto">
                         <li class="nav__item with-dropdown">
-                            <a href="#"  class="nav__item-link">Home</a>
+                            <a href="{{route('home')}}"  class="nav__item-link">Home</a>
                         </li><!-- /.nav-item -->
                         <li class="nav__item with-dropdown">
                             <a href="#" data-toggle="dropdown"  class="dropdown-toggle nav__item-link">Institucional</a>
                             <ul class="dropdown-menu">
-                                <li class="nav__item"><a href="#" class="nav__item-link">Quem Somos</a></li>
+                                <li class="nav__item"><a href="{{route('quemsomos')}}" class="nav__item-link">Quem Somos</a></li>
                                 <!-- /.nav-item -->
                                 <li class="nav__item"><a href="#" class="nav__item-link">Equipe</a></li>
                                 <!-- /.nav-item -->
@@ -79,8 +79,7 @@
                                 <!-- /.nav-item -->
                                 <li class="nav__item"><a href="#" class="nav__item-link">Linha do Tempo</a></li>
                                 <!-- /.nav-item -->
-                                                                <li class="nav__item"><a target="_blank" href="https://engenha.com/e/50684" class="nav__item-link">Trabalhe Conosco</a></li>
-                                <!-- /.nav-item -->
+
 
                             </ul><!-- /.dropdown-menu -->
                         </li><!-- /.nav-item -->
