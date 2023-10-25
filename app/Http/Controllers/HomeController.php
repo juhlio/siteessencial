@@ -22,4 +22,9 @@ class HomeController extends Controller
     {
         return view('Site.equipe');
     }
+
+    public function frota()
+    {
+        return view('Site.frota');
+    }
 }

@@ -74,7 +74,7 @@
                                 <!-- /.nav-item -->
                                 <li class="nav__item"><a href="{{route('equipe')}}" class="nav__item-link">Equipe</a></li>
                                 <!-- /.nav-item -->
-                                <li class="nav__item"><a href="#" class="nav__item-link">Frota</a></li>
+                                <li class="nav__item"><a href="{{route('frota')}}" class="nav__item-link">Frota</a></li>
                                 <!-- /.nav-item -->
                                 <!-- /.nav-item -->
                                 <li class="nav__item"><a href="#" class="nav__item-link">Linha do Tempo</a></li>
