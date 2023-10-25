@@ -10,14 +10,12 @@
         <link href="assets/images/favicon/favicon.png" rel="icon">
         <title>@yield('title')</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700%7cSource+Sans+Pro:300,300i,400,400i,600,600i,700">
-        <link rel="stylesheet" href="{{asset('assets/css/libraries.css')}}">
-        <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+        <link rel="stylesheet" href="https://apiessencial.com.br/vercel/assets/css/libraries.css">
+        <link rel="stylesheet" href="https://apiessencial.com.br/vercel/assets/css/style.css">
         <script src="https://kit.fontawesome.com/47b650be03.js" crossorigin="anonymous"></script>
 
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="{{asset('assets/js/dist/jquery.vmap.js')}}"></script>
-        <link href="{{asset('assets/js/dist/jqvmap.css')}}" media="screen" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="{{asset('assets/js/dist/maps/jquery.vmap.brazil.js')}}" charset="utf-8"></script>
+    
 
 
 
