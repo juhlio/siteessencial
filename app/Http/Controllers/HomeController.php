@@ -32,4 +32,10 @@ class HomeController extends Controller
     {
         return view('Site.timeline');
     }
+
+
+    public function venda()
+    {
+        return view('Site.venda');
+    }
 }

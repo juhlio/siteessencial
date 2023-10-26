@@ -24,3 +24,4 @@ Route::get('/frota', [HomeController::class, 'frota'])->name('frota');
 Route::get('/linha-do-tempo', [HomeController::class, 'timeline'])->name('timeline');
 
 
+Route::get('/venda-geradores-energia', [HomeController::class, 'venda'])->name('venda');
