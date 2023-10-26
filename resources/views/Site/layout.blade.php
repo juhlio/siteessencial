@@ -33,7 +33,7 @@
                 <div class="row">
                     <div class="col-sm-8 col-md-9 col-lg-9">
                         <ul class="contact__list list-unstyled">
-                           
+
                         </ul>
                     </div><!-- /.col-lg-9 -->
                     <div class="col-sm-4 col-md-3 col-lg-3">
@@ -82,7 +82,7 @@
                         </li><!-- /.nav-item -->
 
                         <li class="nav__item with-dropdown">
-                            <a href="#" class="dropdown-toggle nav__item-link">Venda</a>
+                            <a href="{{route('venda')}}" class="dropdown-toggle nav__item-link">Venda</a>
                         </li><!-- /.nav-item -->
 
                         <li class="nav__item with-dropdown">
