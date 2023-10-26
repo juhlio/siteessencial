@@ -38,4 +38,9 @@ class HomeController extends Controller
     {
         return view('Site.venda');
     }
+
+    public function locacao()
+    {
+        return view('Site.locacao');
+    }
 }

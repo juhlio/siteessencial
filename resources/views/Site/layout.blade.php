@@ -86,7 +86,7 @@
                         </li><!-- /.nav-item -->
 
                         <li class="nav__item with-dropdown">
-                            <a href="#"  class="dropdown-toggle nav__item-link">Locação</a>
+                            <a href="{{route('locacao')}}"  class="dropdown-toggle nav__item-link">Locação</a>
                         </li><!-- /.nav-item -->
 
                         <li class="nav__item with-dropdown">
