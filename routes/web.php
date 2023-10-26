@@ -26,3 +26,4 @@ Route::get('/linha-do-tempo', [HomeController::class, 'timeline'])->name('timeli
 
 Route::get('/venda-geradores-energia', [HomeController::class, 'venda'])->name('venda');
 Route::get('/locacao-geradores-energia', [HomeController::class, 'locacao'])->name('locacao');
+Route::get('/manutencao-geradores-energia', [HomeController::class, 'manutencao'])->name('manutencao');
