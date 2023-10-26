@@ -7,7 +7,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link href="assets/images/favicon/favicon.png" rel="icon">
+        <link href="https://apiessencial.com.br/vercel/assets/images/favicon/favicon.png" rel="icon">
         <title>@yield('title')</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700%7cSource+Sans+Pro:300,300i,400,400i,600,600i,700">
         <link rel="stylesheet" href="https://apiessencial.com.br/vercel/assets/css/libraries.css">
@@ -33,10 +33,7 @@
                 <div class="row">
                     <div class="col-sm-8 col-md-9 col-lg-9">
                         <ul class="contact__list list-unstyled">
-                            <li><i class="icon-phone"></i> 0800 779 9009</li>
-                            <li><i class="icon-document"></i><a target="_blank" href="mailto:contato@essencialenergia.com"> contato@essencialenergia.com</a></li>
-                                                        <li><i class="fas fa-hard-hat"></i><a target="_blank" href="https://engenha.com/e/50684"> Trabalhe Conosco</a></li>
-
+                           
                         </ul>
                     </div><!-- /.col-lg-9 -->
                     <div class="col-sm-4 col-md-3 col-lg-3">
