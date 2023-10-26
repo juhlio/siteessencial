@@ -90,7 +90,7 @@
                         </li><!-- /.nav-item -->
 
                         <li class="nav__item with-dropdown">
-                            <a href="{{route('locacao'}}" d class="dropdown-toggle nav__item-link">Manutenção</a>
+                            <a href="{{route('manutencao')}}" d class="dropdown-toggle nav__item-link">Manutenção</a>
                         </li><!-- /.nav-item -->
 
                          <li class="nav__item with-dropdown">
